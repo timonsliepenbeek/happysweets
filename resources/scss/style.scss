@@ -1,0 +1,176 @@
+@import 'variables';
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Basic Layout */
+
+@font-face {
+  font-family: 'FranklinGothicBook';
+  src: url('../fonts/Franklin Gothic Book Regular.ttf');
+}
+
+@font-face {
+  font-family: 'FranklinGothicDemi';
+  src: url('../fonts/Franklin Gothic Demi.ttf');
+}
+
+body
+{
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  background: url('../images/pat-bg.png');
+  color: $text;
+  font-size: 10px;
+};
+
+.main-container
+{
+  max-width: 1024px;
+  margin: auto;
+};
+
+.main-container > .header-logo
+{
+  background-color: $bluecolor;
+  height: 150px;
+  width: 100%;
+  border-bottom: rgba(0,0,0,0.2) solid 10px;
+  display: block;
+}
+
+.main-container > .header-container
+{
+  width: 100%;
+  height: 550px;
+  padding-top: 50px;
+  background-color: $yellowcolor;
+  background-image: url('../images/pat.png');
+  border-bottom: rgba(255,255,255,0.2) solid 10px;
+}
+
+main
+{
+  width: 100%;
+  background-color: $bluecolor;
+  border-bottom: rgba(0,0,0,0.2) solid 10px;
+}
+
+.prize
+{
+  width: 100%;
+  background-image: url('../images/pat-bg2.png');
+}
+
+footer
+{
+  width: 100%;
+  padding: 90px 0px;
+}
+
+/* Make-up */
+
+.main-container > .header-logo > img
+{
+  height: 120px;
+  margin: 0px auto;
+  display: block;
+  padding: 15px 0px;
+};
+
+.main-container > .header-container > .header-text
+{
+  width: 50%;
+  font-size: 3em;
+  margin-left: 30px;
+  padding-right: 30px;
+  float: left;
+}
+
+.main-container > .header-container > .header-text > p
+{
+  font-size: 3em;
+  font-family: 'FranklinGothicDemi';
+}
+
+.main-container > .header-container > .logo
+{
+  width: 40%;
+  display: none;
+}
+
+.main-container > .header-container > .logo > img
+{
+  width: 100%;
+}
+
+.main-container > .header-container > .doodle
+{
+  width: 35%;
+  float: left;
+  padding-left: 15px;
+}
+
+.main-container > .header-container > .doodle > img
+{
+  width: 100%;
+}
+
+.main-container > main > article
+{
+  padding: 30px;
+}
+
+.main-container > main > article > h2
+{
+  font-size: 3em;
+  margin: 30px 0px;
+  font-family: 'FranklinGothicDemi';
+}
+
+.main-container > main > article > p
+{
+  font-size: 2em;
+  font-family: 'FranklinGothicBook';
+  line-height: 1.3;
+}
+
+.main-container > main > article > h3
+{
+  font-size: 6em;
+  width: 50%;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: 'FranklinGothicDemi';
+}
+
+.main-container > main > article > p
+{
+  margin: 30px 0px 100px 0px;
+}
+
+footer > p
+{
+  text-align: center;
+  margin: 0px auto;
+  font-size: 1.2em;
+}
+
+form > input
+{
+  width: 90%;
+  height: 100px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  font-size: 5em;
+  padding: 0px 30px;
+  font-family: FranklinGothicDemi;
+}
+
+form > h4
+{
+  margin-left: 5px;
+  margin-bottom: -20px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
